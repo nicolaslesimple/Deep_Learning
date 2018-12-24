@@ -1,0 +1,28 @@
+from run_sanscross import main
+
+data = int(input('Enter the number of data points you want : '))
+print ('\n')
+
+layer = int(input('Enter the number of hidden layer you want :  '))
+print ('\n')
+
+hidden=[]
+for i in range (layer):
+     hidden.append(int(input(('Enter the number of nodes you want in the layer number {}:  '.format(i+1)))))
+print ('\n')
+
+lr = float(input('Enter the learning rate you want :  '))
+print ('\n')
+
+epoch_ = int(input('Enter the number of epochs you want :  '))
+print ('\n')
+
+print('Number of data points : {}'.format(data))
+print('Number of hidden layer : {}'.format(layer),'with the following architecture : ', hidden)
+print('Learning rate : {}'.format(lr))
+print('Number of data points : {}'.format(epoch_))
+
+
+# Driver
+if __name__ == "__main__":
+    main(data,hidden,lr,epoch_)
